@@ -1,0 +1,53 @@
+# === Laravel Backend ===
+backend/vendor/
+backend/node_modules/
+backend/public/storage/
+backend/public/hot
+backend/public/build/
+backend/storage/*.key
+backend/storage/pail/
+backend/storage/debugbar/
+backend/bootstrap/cache/*.php
+backend/.env
+backend/.env.*
+backend/.phpunit.result.cache
+backend/.phpunit.cache
+backend/.phpactor.json
+backend/Homestead.json
+backend/Homestead.yaml
+backend/npm-debug.log
+backend/yarn-error.log
+backend/auth.json
+backend/.fleet/
+backend/.idea/
+backend/.nova/
+backend/.vscode/
+backend/.zed/
+backend/.DS_Store
+
+# === React Frontend ===
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/.DS_Store
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/.vscode/
+frontend/.idea/
+
+# === General ignores ===
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.cache
+*.lock
+*.DS_Store
+Thumbs.db
+
+# === Keep the documents folder ===
+!documents/
+!documents/**
