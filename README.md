@@ -98,4 +98,14 @@ Fournir aux supporters un moyen pratique d’acheter des articles officiels du c
 
 ---
 
+# Planning de Développement
+
+| **Étape**        | **Durée**     | **Détails** |
+|------------------|---------------|-------------|
+| **1. Préparation** | 4 jours | |
+| ✔️ Liste des indispensables | 2 jours | - Page produits<br>- Panier<br>- Paiement à la livraison (COD)<br>- Interface admin basique |
+| ✔️ Setup technique | 2 jours | - Installation de Laravel + React<br>- Création de 7 tables dans la base de données |
+| **2. Développement** | 26 jours | |
+| 🔧 **Frontend** | 12 jours | - Page produits : 3 jours<br>- Panier : 3 jours<br>- COD : 3 jours<br>- Responsive mobile : 3 jours |
+| 🛠️ **Backend** | 14 jours | - API produits / commandes : 3 jours<br>- Gestion COD : 4 jours<br>- Module admin : 4 jours<br>- Corrections de bugs : 3 jours |
 
