@@ -2,9 +2,12 @@
 
 ## 1. Présentation du projet
 **Nom du projet** : Football Club Store
-**Brève description** :  
+
+**Brève description** : 
+
 Football Club Store est une boutique en ligne officielle du club de football, spécialisée dans la vente de produits dérivés : maillots, accessoires, tenues d'entraînement et objets collector. La plateforme vise à offrir une expérience utilisateur simple, rapide et mobile-friendly.
-**Objectif principal** :  
+**Objectif principal** : 
+ 
 Fournir aux supporters un moyen pratique d’acheter des articles officiels du club avec une interface moderne et un processus de commande optimisé basé sur le paiement à la livraison.
 
 ## 2. Problèmes à résoudre / besoins exprimés
