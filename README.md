@@ -23,24 +23,7 @@ Fournir aux supporters un moyen pratique d’acheter des articles officiels du c
 ## 3. Utilisateurs cibles
 - **Supporters / Clients** : Fans du club souhaitant acheter des produits dérivés, de tout âge, avec une aisance technologique variable.
 
-## 4. Fonctionnalités attendues
-### Pour les Clients :
-- Création de compte et connexion (ou achat invité)
-- Navigation par catégories et filtres (taille, type, nouveauté)
-- Ajout au panier, favoris, suggestions de produits
-- Paiement à la livraison (COD)
-- Historique des commandes
-- Avis sur les produits
-- Notifications via email ou interface
-### Pour les Administrateurs :
-- Tableau de bord analytique (ventes, stocks, tendances)
-- Gestion du catalogue (produits, images, descriptions, prix)
-- Suivi des commandes et gestion des statuts (préparé, expédié, livré)
-- Gestion des retours
-- Configuration des promotions et remises
-- Gestion des comptes utilisateurs
-
-## 5. Contraintes techniques
+## 4. Contraintes techniques
 - **Frontend** : React.js
 - **Backend API** : Laravel (PHP)
 - **DB**: MySQL
@@ -51,9 +34,15 @@ Fournir aux supporters un moyen pratique d’acheter des articles officiels du c
 - Images optimisées et chargement rapide
 
 ---
+# Types d'Utilisateurs
 
-# Liste des Fonctionnalités – Football Club Online Store
+| **Type d'Utilisateur** | **Description** | **Actions Autorisées** | **Routes Protégées (React)** | **Permissions Backend (Laravel)** |
+|------------------------|-----------------|-------------------------|-------------------------------|------------------------------------|
+| **Client** | Supporters du club achetant des produits dérivés en ligne | • Parcourir et rechercher des produits<br>• Ajouter au panier<br>• Passer commande (paiement à la livraison)<br>• Noter et commenter les produits<br>• Ajouter des articles à la wishlist<br>• Consulter l'historique de commandes | `/checkout`<br>`/account/orders`<br>`/wishlist` | • `OrderPolicy@view` pour restreindre l’accès aux données<br>• Limitation d'accès par ID utilisateur |
+| **Administrateur** | Équipe interne du club gérant la boutique | • CRUD sur le catalogue produits<br>• Créer et gérer promotions et remises<br>• Suivi des commandes et retours<br>• Génération de rapports de ventes et inventaire<br>• Gestion des utilisateurs | `/admin/*`<br>`/analytics` | • Accès complet via `Gate::define('isAdmin')`<br>• Middleware admin pour protéger les routes sensibles |
 
+---
+# Liste des Fonctionnalités
 
 ## Liste des Fonctionnalités par Type d’Utilisateur
 ### Pour les Clients :
@@ -106,4 +95,7 @@ Fournir aux supporters un moyen pratique d’acheter des articles officiels du c
 - Suggestions de produits similaires
 - Espace revendeur (si marketplace activée)
 - Interface administrateur personnalisable
+
+---
+
 
