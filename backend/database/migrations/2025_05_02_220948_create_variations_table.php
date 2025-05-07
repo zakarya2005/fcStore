@@ -11,9 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('variations', function (Blueprint $table) {
+        Schema::create('product_sizes', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('product_id');
+            $table->string('size');
+            $table->integer('stock');
             $table->timestamps();
+        
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->unique(['product_id', 'size']);
         });
     }
 
